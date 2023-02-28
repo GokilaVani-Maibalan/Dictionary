@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dictionary</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+        <style>
+        
+
+        span {
+            font-weight: bold;
+        }
+        .btn-primary {
+            width:70px;
+            height:50px;
+            background-color: rgb(114, 114, 114);
+            border: 1px solid rgb(8, 8, 8);
+            border-radius: 10px;
+            font-weight: bold;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        body {
+            background-color:rgb(7, 185, 167);
+            background-image: url(https://unsplash.com/photos/Oaqk7qqNh_c);
+            background-size: 1600px;
+            overflow: hidden;
+        }
+        h1 {
+            background-color: black;
+            text-align: center;
+            height:100px;
+            color:white;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        p{
+            font-size: x-large;
+            font-family: sans-serif;
+            font-style: italic;
+            font-weight: 700;
+            text-align:center;
+            background-color: rgb(215, 215, 215);
+        }
+
+
+        [type="search"] {
+            border-radius: 10px;
+            width:280px;
+            height:50px;
+            font-family:'Courier New', Courier, monospace;
+            font-weight: bold;
+        }
+        h5{
+            color:white;
+        }
+        .modal-header{
+            background-color: black;
+        }
+        </style>
+</head>
+<body>
+    
+    <h1 id="title">ONLINE DICTIONARY</h1>
+        <p>“Dictionaries are like watches; the worst is better than none, and the best cannot be expected to go quite true.”
+            ― Samuel Johnson</p>
+            <hr>
+        <div class="row">
+            <div class="col-12 justify-content-center text-center">
+            <input type="search" placeholder="Search for any word" />
+            <button type="button" class="btn btn-primary" onclick="dictionary()" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                >search</button>
+        </div>
+    </div>
+        <br>
+
+
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel"></h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+    <script src="script.js"></script>
+</body>
+</html>
